@@ -1,0 +1,64 @@
+public class interGALactic {
+	
+	public static void main (String[] args) {
+//	
+//	// googol powers
+//	// find the sum of the digits of the first power of two greater than 10^100
+//	// lets start at 100, and find a power of 2 greater than 10^100
+//	int n = 100;
+//	while (Math.pow(2, n) < Math.pow(10, 100)) {
+//		n++;
+//		//System.out.println("1     " + Math.pow(2,  n) );
+//		//System.out.println("2     " + Math.pow(10,  100));
+//		
+//	}
+//	if (Math.pow(2,  n) > Math.pow(10,  100)) {
+//		//System.out.println("3     " + Math.pow(2, n));
+//		//System.out.println("4     " + n);
+//	}
+//	
+//	int m = (17498005798264095394980017816940970922825355447145699491406164851279623993595007385788105416184430592);
+//	System.out.println(m);
+//    if (m <= 0)
+//        System.out.println("Integer you've entered is nonpositive.");
+//    else {
+//        int sum = 0;
+//        while (m != 0) {
+//              // add last digit to the sum
+//              sum += m % 10;
+//              // cut last digit
+//              m /= 10;
+//        }
+//        System.out.println("Sum of digits: " + sum);
+//        
+//  }
+		
+	// word chain is a list of words such that each word is the same length as the previous word and differs only by one letter
+	// word group is a set of words such that any word in the group is reachable from any other via a word chain
+		
+   // baseic sorting
+		
+	    public String getBinary(int n) {
+	    	// check preconditions
+	        if( n < 0)
+	            throw new IllegalArgumentException("Failed precondition: getBinary. n must be >= 0. n: " + n);
+	        // base case - if number is less than 2, there is no more number left to analyze! just get the number!
+	        if (n < 2) {
+	        	return "" + n;
+	        // otherwise, keep going
+	        } else {
+	        	// to determine binary (base 2) you must divide by 2
+	        	// get what dividing by 2 gives you
+	        	int result = (n/2);
+	        	// what is left over (remainder) will determine if the binary number is a 1 or 0
+	        	int remainder = (n % 2);
+	        	// add to binary string and then go through method for resulting number
+	        	return(getBinary(result) + remainder);   	
+	        } 
+	    }
+	
+	}
+	
+	while ()
+	
+}
